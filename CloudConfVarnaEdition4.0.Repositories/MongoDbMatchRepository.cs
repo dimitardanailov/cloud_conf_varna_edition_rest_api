@@ -60,7 +60,7 @@ namespace CloudConfVarnaEdition4._0.Repositories
         /// Add couple of dummy matches.
         /// We use latest Champion Results (Results from 21 October 2015)
         /// </summary>
-        public void addDummyMatches()
+        public void AddDummyMatches()
         {
             // Reset database
             _entities.RemoveAll();

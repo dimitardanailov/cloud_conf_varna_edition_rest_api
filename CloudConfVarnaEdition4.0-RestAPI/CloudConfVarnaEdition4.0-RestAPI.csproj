@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MatchesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -284,6 +285,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CloudConfVarnaEdition4.0.Repositories\CloudConfVarnaEdition4.0.Repositories.csproj">
+      <Project>{58964b9c-0520-47d5-a460-a189e423f624}</Project>
+      <Name>CloudConfVarnaEdition4.0.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudConfVarnaEdition4._0.Entities\CloudConfVarnaEdition4.0.Entities.csproj">
+      <Project>{0a336ab4-1ad1-4113-92b8-85510bbdc2bc}</Project>
+      <Name>CloudConfVarnaEdition4.0.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
