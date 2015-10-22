@@ -12,6 +12,15 @@ namespace CloudConfVarnaEdition4._0.Entities
 {
     public class Match : BaseEntity, IMatch
     {
+
+        public Match(string HomeTeam, string AwayTeam, int HomeTeamResult, int AwayTeamResult)
+        {
+            this.HomeTeam = HomeTeam;
+            this.AwayTeam = AwayTeam;
+            this.HomeTeamResult = HomeTeamResult;
+            this.AwayTeamResult = AwayTeamResult; 
+        }
+
         [BsonId]
         public BsonObjectId MatchID { get; set; }
 
