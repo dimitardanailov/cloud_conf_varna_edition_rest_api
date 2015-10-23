@@ -12,6 +12,10 @@ namespace CloudConfVarnaEdition4._0_RestAPI
     {
         public static void Register(HttpConfiguration config)
         {
+            // Enable CORS Settings
+            // Source: http://www.asp.net/web-api/overview/security/enabling-cross-origin-requests-in-web-api
+            config.EnableCors();
+
             // Web API configuration and services
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
