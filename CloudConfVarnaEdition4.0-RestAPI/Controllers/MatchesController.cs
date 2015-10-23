@@ -6,7 +6,8 @@ using System.Web.Http.Cors;
 
 namespace CloudConfVarnaEdition4._0_RestAPI.Controllers
 {
-    [EnableCors(origins: "http://cloudconfvarnamicroservices.azurewebsites.net", headers: "*", methods: "*")]
+    // Allow CORS for all origins. (Caution!)
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class MatchesController : ApiController
     {
         private static readonly MongoDbMatchRepository _repository = new MongoDbMatchRepository();
